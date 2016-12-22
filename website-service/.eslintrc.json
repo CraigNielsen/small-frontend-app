@@ -1,0 +1,52 @@
+  {
+    "parser": "babel-eslint",
+    "rules": {
+      "strict": 0
+    },
+    "env": {
+        "es6": true,
+        "commonjs": true,
+        "browser": true
+    },
+    "plugins": [
+        "standard",
+        "import",
+        "react"
+    ],
+    "settings": {
+      "import/resolver": "webpack",
+      "react": {
+        "version": "15.0"
+      }
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "installedESLint": true,
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "rules": {
+        "semi": "off",
+        "comma-dangle": "error",
+        "object-shorthand": "off",
+        "no-else-return": "off",
+        "no-console": "off",
+        "space-before-function-paren": "off",
+        "import/order": 2,
+        "import/newline-after-import": 2,
+        "object-curly-spacing": "off",
+        "quote-props": "off",
+        "max-len": "off",
+        "arrow-body-style": "off",
+        "space-infix-ops": "off",
+        "func-names": "off",
+        "react/prefer-stateless-function": "off",
+        "react/no-multi-comp": "off"
+    }
+}
